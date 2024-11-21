@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Fonts -->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Permanent+Marker&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -17,54 +19,58 @@
         <!-- Desktop Header -->
         <div class="desktop-header">
             <div class="logo">
-                <a href="index.html"><img src="---LOGO---" alt="Skittles Logo"></a>
+                <a href="index.html"><img src="img/Skittles-Logo.png" alt="Skittles Logo"></a>
             </div>
             <nav>
-                <menu>
+                <ul>
                     <li><a href="#">Taste the Rainbow</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
-                </menu>
+                </ul>
             </nav>
         </div>
         <!-- Mobile Header -->
-        <div class="mobile-nav">
-            <input id="burger" type="checkbox">
-            <label for="burger">
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="index.html"><img src="img/Skittles-Logo.png" alt="Skittles Logo"></a>
+            </div>
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle" class="burger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-            <nav>
-                <div class="logo">
-                    <a href="index.html"><img src="---LOGO---" alt="Skittles Logo"></a>
-                </div>
-                <menu>
+            <div class="mobile-menu">
+                <ul>
                     <li><a href="#">Taste the Rainbow</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
-                </menu>
-            </nav>
+                </ul>
+            </div>
         </div>
-    </header>
+    </header>    
     <!-- Masthead -->
     <section class="masthead">
         <div class="masthead-content">
             <h1>Welcome to the World of Skittles!</h1>
-            <p>Discover the delicious flavors and fun of Skittles - Taste the Rainbow.</p>
+            <p>Discover the delicious flavors and fun of Skittles. <br> Taste the Rainbow</p>
         </div>
     </section>
     <!-- Main Content -->
     <main>
+        <!-- Video Section -->
+        <section class="video">
+            
+        </section>
         <!-- Promotions Section -->
         <section class="promotions">
             <div class="call-to-action">
-                <h2>Bring Some Holiday Spirit With</h2>
+                <h2>Bring Home Some Holiday Spirit With</h2>
                 <h3>Skittles Holiday Edition</h3>
             </div>
             <div class="promotion-content">
                 <!-- text Column -->
-                <div>
+                <div class="promotion-text">
                     <h4>Try Limited Edition Flavors</h4>
                     <ul>
                         <li>Cherry Cheer</li>
@@ -75,19 +81,16 @@
                 </div>
                 <!-- image Column -->
                 <div>
-                    <img src="---IMAGE---" alt="Limited Edition Skittles">
+                    <img src="img/holidayED.png" alt="Limited Edition Skittles">
                 </div>
             </div>
         </section>
-        <!-- Video Section -->
-        <section class="video">
-            <!-- embedded video from youtube with dynamic width -->
-        </section>
+        
     </main>
     <!-- Footer -->
     <footer>
         <div class="logo">
-            <a href="index.html"><img src="---LOGO---" alt="Skittles Logo"></a>
+            <a href="index.html"><img src="img/Skittles-Logo.png" alt="Skittles Logo"></a>
         </div>
         <div class="social-media">
             <ul>
