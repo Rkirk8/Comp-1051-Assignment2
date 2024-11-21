@@ -210,12 +210,14 @@ header {
     background-size: cover;
     background-position: center;
     padding: 40px 20px;
-
 }
 
-.promotions .call-to-action h2, .promotions .call-to-action h3 {
+/* Call-to-Action */
+.promotions .call-to-action h2, 
+.promotions .call-to-action h3 {
     text-align: center;
     font-size: 2rem;
+    margin: 0 auto; 
 }
 
 .promotions .call-to-action h2 {
@@ -224,23 +226,27 @@ header {
     font-family: 'Permanent Marker', sans-serif;
 }
 
-
 .promotions .call-to-action h3 {
     color: #ee3b2d;
     margin-bottom: 30px;
     font-family: 'Berkshire Swash', sans-serif;
 }
 
-
+/* Content Layout */
 .promotion-content {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
+/* Promotion Text */
 .promotion-text {
-    flex: 1;
+    flex: 1 1 45%; 
+    max-width: 500px; 
     padding: 20px;
     text-align: center;
     display: flex;
@@ -248,11 +254,17 @@ header {
     justify-content: center;
     font-size: 1.5rem;
 }
+
+/* Images */
 .promotion-content img {
+    flex: 1 1 45%; 
     width: 100%;
+    max-width: 500px;
     height: auto;
     display: block;
+    
 }
+
 
 /*video section*/
 .commit {
@@ -275,11 +287,101 @@ header {
     background-color: #a3248a;
 }
 
+.about-us h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Sriracha", cursive;
+    text-align: center;
+}
+
+.about-us .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-us .content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-us .content p {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.about-us button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #fbae36; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
 /* Contact Section */
 .contact {
     padding: 40px 20px;
     background-color: #72be51;
 }
+
+.contact h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Sriracha", cursive;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #fbae36; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #ee3b2d;
+}
+
 /* Footer */
 footer {
     background-color: #ee3b2d;
@@ -329,10 +431,31 @@ footer p {
     .promotion-content {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .promotion-content div {
         max-width: 80%;
         text-align: center;
+    }
+
+    .promotion-text, .promotion-content img {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .promotion-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .promotions .call-to-action h2,
+    .promotions .call-to-action h3 {
+        font-size: 1.5rem;
+    }
+
+    .promotion-text {
+        font-size: 1rem;
     }
 }
